@@ -1,5 +1,17 @@
 //Program to take a input from user, to see if we get the same when two elements of array are added
 
+/*
+
+output:
+
+Enter the length of single array : 6
+Enter the elements : 1 2 3 0 4 5
+Enter the target elemnt : 3
+The pair is 1,2
+The pair is 3,0
+we got 2 pairs
+
+*/
 
 #include<stdio.h>
 

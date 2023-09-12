@@ -1,7 +1,9 @@
 //Program to take a input from user, to see if we get the same when two elements of array are added
+
+
 #include<stdio.h>
 
-int check(int arr[],int tar,int leng);
+int check(int arr[],int tar,int leng);//function prototype
 
 int main()
 {

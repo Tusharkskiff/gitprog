@@ -1,5 +1,9 @@
+#program for tic tac toe on shell
+
+#creating the board
 board = ["  " for i in range(9)]
 
+#Function where the board is printed 
 def print_board():
     row1 = "| {} | {} | {} |".format(board[0], board[1], board[2])
     row2 = "| {} | {} | {} |".format(board[3], board[4], board[5])
@@ -11,22 +15,38 @@ def print_board():
     print(row3)
     print()
 
+
+#Funtion that manipulates with the user input and makes the move
 def player_move(icon):
     
     if icon == "X":
         number = 1
     elif icon == "O":
         number = 2
-        
-    print("Your turn player {}".format(number))
     
-    choice = int(input("Enter your move (1-9): ").strip())
-    if board[choice -1] == "  ":
-        board[choice -1 ] = icon
-    else:
+    try:
+        print("Your turn player {}, playing as {}".format(number,icon))
+        choice = int(input("Enter your move (1-9): ").strip())
+    except ValueError:
+        print("invalid input")
         print()
-        print("That space is taken!")
+        player_move(icon)
+    else:
+        if choice>0 and choice<10:
+            
+            if board[choice -1] == "  ":
+                board[choice -1 ] = icon
+            else:
+                print("That space is taken!")
+                print()
+                player_move(icon)
+        else:
+            print("Invalid input")
+            print()
+            player_move(icon)
 
+
+#function that checks for the victory of the game
 def is_victory(icon):
     if (board[0] == icon and board[1] == icon and board[2] == icon) or \
        (board[3] == icon and board[4] == icon and board[5] == icon) or \
@@ -39,13 +59,18 @@ def is_victory(icon):
         return True
     else:
         return False
-    
+
+
+#function that checks if the game is a draw    
 def is_draw():
     if "  " not in board:
         return True
     else:
         return False
 
+
+
+#infinite loop to play
 while True:
     print_board()
     player_move("X")
@@ -64,7 +89,3 @@ while True:
     elif is_draw():
         print("Its a draw!")
         break
-
-    
-
-    

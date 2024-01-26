@@ -18,8 +18,6 @@ if symbol=='X' or symbol=='O':
     if choice==1:
         e.easy(symbol)
     elif choice==2:
-        d.diffcult(symbol)
+        d.difficult(symbol)
 else:
     print("invalid input")
-
-

@@ -1,7 +1,7 @@
 import game_src as gc
 import random
 
-#function for difficult level ai
+#function for difficult level ai 
 def difficult(symbol):
     #function for ai playing as X
     def ais(human, ai):

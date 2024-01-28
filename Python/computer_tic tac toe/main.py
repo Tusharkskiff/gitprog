@@ -1,7 +1,7 @@
 import easy_ai as e
 import difficult_ai as d
 
-# welcome
+# welcome message
 print("-" * 60)
 print("WELCOME TO TIC TAC TOE")
 print("-" * 60)

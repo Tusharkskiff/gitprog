@@ -1,7 +1,7 @@
 import game_src as gc
 from random import randrange
 
-#function for easy level ai 
+#function for easy level ai  
 def easy(symbol):
 
     #defining symboly for human and ai

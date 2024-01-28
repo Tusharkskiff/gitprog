@@ -1,4 +1,4 @@
-# creating the board
+# creating the board 
 import random
 
 board = ["  " for i in range(9)]

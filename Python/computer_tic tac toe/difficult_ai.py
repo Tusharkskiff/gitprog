@@ -14,7 +14,7 @@ def difficult(symbol):
             gc.player_move(human)
             gc.print_board()
             if gc.is_victory(human):
-                print("YOU Wins! Congratulations!")
+                print("YOU Win! Congratulations!")
                 break
             elif gc.is_draw():
                 print("Its a draw!")
@@ -40,7 +40,7 @@ def difficult(symbol):
             gc.player_move(human)
             gc.print_board()
             if gc.is_victory(human):
-                print("YOU Wins! Congratulations!")
+                print("YOU Win! Congratulations!")
                 break
             elif gc.is_draw():
                 print("Its a draw!")

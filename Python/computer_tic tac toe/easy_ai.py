@@ -19,7 +19,7 @@ def easy(symbol):
                 gc.player_move(human)
                 gc.print_board()
                 if gc.is_victory(human):
-                    print("YOU Wins! Congratulations!")
+                    print("YOU Win! Congratulations!")
                     break
                 elif gc.is_draw():
                     print("Its a draw!")
@@ -53,7 +53,7 @@ def easy(symbol):
                 gc.player_move(human)
                 if gc.is_victory(human):
                     gc.print_board()
-                    print("Human Wins! Congratulations!")
+                    print("YOU Win! Congratulations!")
                     break
                 elif gc.is_draw():
                     print("Its a draw!")
